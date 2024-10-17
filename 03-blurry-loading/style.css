@@ -1,0 +1,30 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.bg {
+  background: url("https://images.unsplash.com/photo-1576161787924-01bb08dad4a4?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2104&q=80")
+    no-repeat center center/cover;
+  width: 100%;
+  height: 100%;
+  filter: blur(0px);
+}
+
+.sp-loading {
+  display: block;
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 48%;
+}
