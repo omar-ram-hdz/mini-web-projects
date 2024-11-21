@@ -1,0 +1,94 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  border: none;
+  color: inherit;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  color: #cecece;
+}
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: stretch;
+  align-items: stretch;
+  position: relative;
+}
+section {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transition: flex 600ms ease-in-out;
+  flex: 1;
+  position: relative;
+  background-size: auto 110%;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+section:hover {
+  flex: 2;
+}
+h2 {
+  z-index: 1;
+  font-size: 5rem;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+section button {
+  z-index: 1;
+  width: 20rem;
+  height: 5rem;
+  border-radius: 10px;
+  border: solid 1px black;
+  background-color: rgba(62, 59, 57, 0.8);
+  font-size: 1.5em;
+  font-style: bold;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+  transition: background-color 300ms ease-in-out;
+}
+.sec-mac {
+  background-image: url("./00-mac.jpg");
+  left: 0;
+  background-color: #1d1c1c;
+}
+.sec-windows {
+  background-image: url("./01-win.jpg");
+  right: 0;
+  background-color: #000001;
+}
+.sec-mac::before,
+.sec-windows::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+.sec-mac::before {
+  background-color: rgba(62, 59, 57, 0.7);
+}
+.sec-windows::before {
+  background-color: rgba(38, 71, 161, 0.5);
+}
+.sec-mac button:hover {
+  background-color: #cecece;
+  color: rgba(62, 59, 57);
+}
+.sec-windows button:hover {
+  background-color: rgb(95, 148, 204);
+  color: #cecece;
+}
+@media (max-width: 1000px) {
+  main {
+    flex-direction: column;
+  }
+  section {
+    width: 100%;
+    background-size: 150% auto;
+  }
+}
