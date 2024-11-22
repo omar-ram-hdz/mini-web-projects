@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="es-MX">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>MWP | Form Wave</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <form id="login">
+      <h1>Please Login</h1>
+      <div class="form-field-container">
+        <input
+          type="email"
+          id="email"
+          name="email"
+          autocomplete="off"
+          required
+        />
+        <label for="email">Email</label>
+      </div>
+      <div class="form-field-container">
+        <input
+          type="password"
+          id="password"
+          name="password"
+          autocomplete="off"
+          required
+        />
+        <label for="password">Password</label>
+      </div>
+      <button type="submit">Login</button>
+      <p>¿No tienes cuenta? <a href="#">Registrarse</a></p>
+    </form>
+  </body>
+</html>
