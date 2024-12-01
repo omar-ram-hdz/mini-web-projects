@@ -1,0 +1,66 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-size: 20px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+main {
+  width: 90%;
+  max-width: 700px;
+  margin: 30px auto;
+}
+button {
+  cursor: pointer;
+  border: none;
+}
+h1 {
+  margin-bottom: 30px;
+}
+p {
+  margin-bottom: 10px;
+  line-height: 2.5ch;
+}
+dialog {
+  position: fixed;
+  left: 25px;
+  bottom: 25px;
+  background-color: #121212;
+  max-width: 300px;
+  padding: 15px 30px;
+  border-radius: 20px;
+}
+dialog div {
+  display: flex;
+  justify-content: space-between;
+}
+dialog img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  margin-top: 10px;
+  margin-bottom: 50px;
+}
+dialog p {
+  font-size: 1.3em;
+  color: #fdfdfd;
+  margin: 20px 0px;
+}
+#allow {
+  font-size: 1.2em;
+  display: block;
+  width: 95%;
+  padding: 10px 15px;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+.close-dialog {
+  background-color: transparent;
+  width: 40px;
+  height: 40px;
+  background-image: url("./images/close.svg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
